@@ -1,0 +1,101 @@
+2016-05-15 22:15:26,337 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:15:26,338 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:15:26,338 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Start Test       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-05-15 22:15:26,338 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:15:26,338 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:15:26,339 INFO  [Log] Browser started. 
+2016-05-15 22:15:34,434 INFO  [Log] Entering value imsdfsan@hotmail.comto text field Email_LoginPage 
+2016-05-15 22:15:34,837 INFO  [Log] Entering value pass123to text field Password_LoginPage 
+2016-05-15 22:15:34,950 INFO  [Log] Clicking button Submit_LoginPage 
+2016-05-15 22:15:35,133 INFO  [Log] Verify output message. 
+2016-05-15 22:15:36,062 INFO  [Log] verify failure. Unable to locate element: {"method":"id","selector":"idTd_Tile_ErrorMsg_Login"}
+Command duration or timeout: 919 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'imran-IdeaPad-Z585', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-55-generic', java.version: '1.7.0_79'
+*** Element info: {Using=id, value=idTd_Tile_ErrorMsg_Login}
+Session ID: eb7fe371-9a37-4bbf-93e5-395649a64f1c
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}] 
+2016-05-15 22:27:58,328 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:27:58,329 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:27:58,329 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Start Test       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-05-15 22:27:58,329 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:27:58,329 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:27:58,329 INFO  [Log] Browser started. 
+2016-05-15 22:28:36,012 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:28:36,012 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:28:36,013 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Start Test       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-05-15 22:28:36,013 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:28:36,013 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:28:36,013 INFO  [Log] Browser started. 
+2016-05-15 22:28:43,260 INFO  [Log] Entering value imsdfsan@hotmail.comto text field Email_LoginPage 
+2016-05-15 22:28:43,961 INFO  [Log] Entering value pass123to text field Password_LoginPage 
+2016-05-15 22:28:44,093 INFO  [Log] Clicking button Submit_LoginPage 
+2016-05-15 22:28:44,268 INFO  [Log] Verify output message. 
+2016-05-15 22:28:44,789 INFO  [Log] verify failure. Unable to locate element: {"method":"id","selector":"idTd_Tile_ErrorMsg_Login"}
+Command duration or timeout: 508 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'imran-IdeaPad-Z585', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-55-generic', java.version: '1.7.0_79'
+*** Element info: {Using=id, value=idTd_Tile_ErrorMsg_Login}
+Session ID: 296d3d5d-d848-4123-a1d0-05191f882914
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}] 
+2016-05-15 22:30:18,015 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:30:18,015 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:30:18,015 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Start Test       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-05-15 22:30:18,015 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:30:18,016 INFO  [Log] **************************************************************************************** 
+2016-05-15 22:30:18,016 INFO  [Log] Browser started. 
+2016-05-15 22:30:25,031 INFO  [Log] Entering value imsdfsan@hotmail.comto text field Email_LoginPage 
+2016-05-15 22:30:25,620 INFO  [Log] Entering value pass123to text field Password_LoginPage 
+2016-05-15 22:30:25,726 INFO  [Log] Clicking button Submit_LoginPage 
+2016-05-15 22:30:25,909 INFO  [Log] Verify output message. 
+2016-05-15 22:30:26,711 INFO  [Log] verify failure. Unable to locate element: {"method":"id","selector":"idTd_Tile_ErrorMsg_Login"}
+Command duration or timeout: 791 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'imran-IdeaPad-Z585', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-55-generic', java.version: '1.7.0_79'
+*** Element info: {Using=id, value=idTd_Tile_ErrorMsg_Login}
+Session ID: 5594d60f-ecb9-4228-bb01-c6a3372e9601
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}] 
+2016-05-16 14:02:47,957 INFO  [Log] **************************************************************************************** 
+2016-05-16 14:02:47,957 INFO  [Log] **************************************************************************************** 
+2016-05-16 14:02:47,958 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Start Test       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-05-16 14:02:47,958 INFO  [Log] **************************************************************************************** 
+2016-05-16 14:02:47,958 INFO  [Log] **************************************************************************************** 
+2016-05-16 14:02:47,958 INFO  [Log] Browser started. 
+2016-05-16 14:02:59,332 INFO  [Log] Entering value imsdfsan@hotmail.comto text field Email_LoginPage 
+2016-05-16 14:03:00,079 INFO  [Log] Entering value pass123to text field Password_LoginPage 
+2016-05-16 14:03:00,196 INFO  [Log] Clicking button Submit_LoginPage 
+2016-05-16 14:03:00,390 INFO  [Log] Verify output message. 
+2016-05-16 14:03:00,915 INFO  [Log] verify failure. Unable to locate element: {"method":"id","selector":"idTd_Tile_ErrorMsg_Login"}
+Command duration or timeout: 496 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'imran-IdeaPad-Z585', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-55-generic', java.version: '1.7.0_79'
+*** Element info: {Using=id, value=idTd_Tile_ErrorMsg_Login}
+Session ID: 85324738-bd85-427b-8ffb-156294fa02cc
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}] 
+2016-05-16 20:12:35,464 INFO  [Log] **************************************************************************************** 
+2016-05-16 20:12:35,464 INFO  [Log] **************************************************************************************** 
+2016-05-16 20:12:35,464 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Start Test       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-05-16 20:12:35,465 INFO  [Log] **************************************************************************************** 
+2016-05-16 20:12:35,465 INFO  [Log] **************************************************************************************** 
+2016-05-16 20:12:35,465 INFO  [Log] Browser started. 
+2016-05-16 20:12:42,688 INFO  [Log] Entering value imsdfsan@hotmail.comto text field Email_LoginPage 
+2016-05-16 20:12:43,288 INFO  [Log] Entering value pass123to text field Password_LoginPage 
+2016-05-16 20:12:43,407 INFO  [Log] Clicking button Submit_LoginPage 
+2016-05-16 20:12:43,576 INFO  [Log] Verify output message. 
+2016-05-16 20:12:44,062 INFO  [Log] verify failure. Unable to locate element: {"method":"id","selector":"idTd_Tile_ErrorMsg_Login"}
+Command duration or timeout: 475 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'imran-IdeaPad-Z585', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-55-generic', java.version: '1.7.0_79'
+*** Element info: {Using=id, value=idTd_Tile_ErrorMsg_Login}
+Session ID: 12701bb4-d604-473d-85fd-7632aab65027
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=LINUX, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=38.0}] 

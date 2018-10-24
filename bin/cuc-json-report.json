@@ -1,0 +1,98 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1543175198,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Login page.",
+        "description": "",
+        "id": "cd-pipeline-demo;login-page.",
+        "after": [
+          {
+            "result": {
+              "duration": 70004088,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 896888222,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the SDC home page",
+            "match": {
+              "location": "LoginStepDef.iAmOnThePipelineDemoPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 143134136,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter the username \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginStepDef.enterUsername(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 145462967,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter the password \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginStepDef.enterPassword(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@demo"
+          }
+        ]
+      }
+    ],
+    "name": "CD Pipeline Demo",
+    "description": "",
+    "id": "cd-pipeline-demo",
+    "keyword": "Feature",
+    "uri": "PipelineDemo.feature"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "intervals": "2018-07-25T00:00:00+00:00/2018-07-27T00:00:00+00:00",
+  "aggregations": [
+    {
+      "fieldName": "used",
+      "name": "sum__used",
+      "type": "doubleSum"
+    }
+  ],
+  "postAggregations": [],
+  "threshold": 200000,
+  "queryType": "topN",
+  "metric": "sum__used",
+  "granularity": "day",
+  "dataSource": "hitachicorp_block_device_flattened",
+  "dimension": "device_devicename"
+}  

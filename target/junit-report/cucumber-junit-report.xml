@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="7" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="15" time="366.649287">
+<testcase classname="Backend Tests" name="Establish connection to Druid" time="1.747223">
+<system-out><![CDATA[Given I am connected to: "http://10.79.236.138:8082/druid/v2/?pretty".......passed
+And I use the Jason query: "C:/Users/Sshaikh/Desktop/SDC/sdc-ui-selenium/functional-tests/DruidQuery.json".passed
+And I save data to Location: "C://Users//Sshaikh//Desktop//SDC//sdc-ui-selenium//functional-tests//data-dump/DRUID//".passed
+Then the result should be pulled............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Backend Tests" name="NULL CHECK data from Druid" time="0.670882">
+<failure message="java.io.IOException: Stream closed&#13;&#10;&#9;at java.io.BufferedReader.ensureOpen(BufferedReader.java:122)&#13;&#10;&#9;at java.io.BufferedReader.readLine(BufferedReader.java:317)&#13;&#10;&#9;at java.io.BufferedReader.readLine(BufferedReader.java:389)&#13;&#10;&#9;at com.sdc.automation.utilities.FileUtils.hasNullData(FileUtils.java:35)&#13;&#10;&#9;at com.sdc.automation.backend.DruidConnection.DruidDataCheckNull(DruidConnection.java:40)&#13;&#10;&#9;at com.sdc.automation.stepdefinitions.DruidStepDefinition.DruidDataCheckNull(DruidStepDefinition.java:18)&#13;&#10;&#9;at ✽.And the Druid file is extracted and NULL check begins(Backend.feature:17)&#13;&#10;"><![CDATA[Given I am connected to: "http://10.79.236.138:8082/druid/v2/?pretty".......passed
+When I use the Jason query: "C:/Users/Sshaikh/Desktop/SDC/sdc-ui-selenium/functional-tests/DruidQuery.json".passed
+And I save data to Location: "C://Users//Sshaikh//Desktop//SDC//sdc-ui-selenium//functional-tests//data-dump/DRUID//".passed
+Then the result should be pulled............................................passed
+And the Druid file is extracted and NULL check begins.......................failed
+
+StackTrace:
+java.io.IOException: Stream closed
+	at java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+	at java.io.BufferedReader.readLine(BufferedReader.java:317)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at com.sdc.automation.utilities.FileUtils.hasNullData(FileUtils.java:35)
+	at com.sdc.automation.backend.DruidConnection.DruidDataCheckNull(DruidConnection.java:40)
+	at com.sdc.automation.stepdefinitions.DruidStepDefinition.DruidDataCheckNull(DruidStepDefinition.java:18)
+	at ✽.And the Druid file is extracted and NULL check begins(Backend.feature:17)
+]]></failure>
+</testcase>
+<testcase classname="Backend Tests" name="Capacity variation above a treshold in Druid" time="9.574751">
+<failure message="java.lang.Exception: Variation is -205 greater than threshold for DRUID_BLOCK_CAPACITY AND VSPG_56744 DATE -205.23844246266577&#13;&#10;&#9;at com.sdc.automation.backend.DruidConnection.DruidVariationForLastTwoDays(DruidConnection.java:100)&#13;&#10;&#9;at com.sdc.automation.stepdefinitions.DruidStepDefinition.theDruidDataExtracted(DruidStepDefinition.java:48)&#13;&#10;&#9;at ✽.Then The variation in Druid for last two days is less than percent :50(Backend.feature:25)&#13;&#10;"><![CDATA[Given I am connected to: "http://10.79.236.138:8082/druid/v2/?pretty".......passed
+When I use the Jason query: "C:/Users/Sshaikh/Desktop/SDC/sdc-ui-selenium/functional-tests/DruidQuery1.json".passed
+Then Druid connection to Maria Database is established:"jdbc:mariadb://10.79.236.111:3306/sdc_qa?user=root&password=superset".passed
+And The Druid Data is dumped in MariaDbTable:"sdc_qa.druid_capacity_status".passed
+Then The variation in Druid for last two days is less than percent :50......failed
+
+StackTrace:
+java.lang.Exception: Variation is -205 greater than threshold for DRUID_BLOCK_CAPACITY AND VSPG_56744 DATE -205.23844246266577
+	at com.sdc.automation.backend.DruidConnection.DruidVariationForLastTwoDays(DruidConnection.java:100)
+	at com.sdc.automation.stepdefinitions.DruidStepDefinition.theDruidDataExtracted(DruidStepDefinition.java:48)
+	at ✽.Then The variation in Druid for last two days is less than percent :50(Backend.feature:25)
+]]></failure>
+</testcase>
+<testcase classname="Backend Tests" name="Number of devices variation above a treshold in Druid" time="4.780171">
+<failure message="java.lang.Exception: Variation is -205 greater than threshold for DRUID_BLOCK_CAPACITY AND VSPG_56744 DATE -205.23844246266577&#13;&#10;&#9;at com.sdc.automation.backend.DruidConnection.DruidNumberVariation(DruidConnection.java:88)&#13;&#10;&#9;at com.sdc.automation.stepdefinitions.DruidStepDefinition.theDruidDeviceNumbers(DruidStepDefinition.java:54)&#13;&#10;&#9;at ✽.Then The variation in Druid for last two days is less than number :50(Backend.feature:33)&#13;&#10;"><![CDATA[Given I am connected to: "http://10.79.236.138:8082/druid/v2/?pretty".......passed
+When I use the Jason query: "C:/Users/Sshaikh/Desktop/SDC/sdc-ui-selenium/functional-tests/DruidQuery1.json".passed
+Then Druid connection to Maria Database is established:"jdbc:mariadb://10.79.236.111:3306/sdc_qa?user=root&password=superset".passed
+And The Druid Data is dumped in MariaDbTable:"sdc_qa.druid_capacity_status".passed
+Then The variation in Druid for last two days is less than number :50.......failed
+
+StackTrace:
+java.lang.Exception: Variation is -205 greater than threshold for DRUID_BLOCK_CAPACITY AND VSPG_56744 DATE -205.23844246266577
+	at com.sdc.automation.backend.DruidConnection.DruidNumberVariation(DruidConnection.java:88)
+	at com.sdc.automation.stepdefinitions.DruidStepDefinition.theDruidDeviceNumbers(DruidStepDefinition.java:54)
+	at ✽.Then The variation in Druid for last two days is less than number :50(Backend.feature:33)
+]]></failure>
+</testcase>
+<testcase classname="Backend Tests" name="Establish connection to CMDB" time="1.456039">
+<system-out><![CDATA[Given I use the CMDB URL: "dgsddevcmdb01.mcs.local:3306/car_nomura".........passed
+And I use the CMDB userid: "iawan"..........................................passed
+And I use the CMDB password: "yasmijNth!!"..................................passed
+And I use CMDB query: "SELECT 'Hello World!'"...............................passed
+Then the CMDB connection is established.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Backend Tests" name="Extract data from CMDB" time="1.608935">
+<system-out><![CDATA[When I insert CMDB query: "select * from tblcountry"........................passed
+Then the CMDB connection is established.....................................passed
+And the CMDB table data is extracted at: "C://Users//Sshaikh//Desktop//SDC//sdc-ui-selenium//functional-tests//data-dump/CMDB//".passed
+]]></system-out>
+</testcase>
+<testcase classname="Backend Tests" name="NULL CHECK data from CMDB" time="1.60015">
+<failure message="java.io.IOException: Stream closed&#13;&#10;&#9;at java.io.BufferedReader.ensureOpen(BufferedReader.java:122)&#13;&#10;&#9;at java.io.BufferedReader.readLine(BufferedReader.java:317)&#13;&#10;&#9;at java.io.BufferedReader.readLine(BufferedReader.java:389)&#13;&#10;&#9;at com.sdc.automation.utilities.FileUtils.hasNullData(FileUtils.java:35)&#13;&#10;&#9;at com.sdc.automation.backend.CMDBConnector.CmdbDataCheckNull(CMDBConnector.java:36)&#13;&#10;&#9;at com.sdc.automation.stepdefinitions.CMDBConnectionStepDefinition.CmdbDataCheckNull(CMDBConnectionStepDefinition.java:19)&#13;&#10;&#9;at ✽.Then the CMDB file is extracted and NULL check begins(Backend.feature:54)&#13;&#10;"><![CDATA[When I insert CMDB query: "select * from tblcountry"........................passed
+Then the CMDB connection is established.....................................passed
+And the CMDB table data is extracted at: "C://Users//Sshaikh//Desktop//SDC//sdc-ui-selenium//functional-tests//data-dump/CMDB//".passed
+Then the CMDB file is extracted and NULL check begins.......................failed
+
+StackTrace:
+java.io.IOException: Stream closed
+	at java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+	at java.io.BufferedReader.readLine(BufferedReader.java:317)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at com.sdc.automation.utilities.FileUtils.hasNullData(FileUtils.java:35)
+	at com.sdc.automation.backend.CMDBConnector.CmdbDataCheckNull(CMDBConnector.java:36)
+	at com.sdc.automation.stepdefinitions.CMDBConnectionStepDefinition.CmdbDataCheckNull(CMDBConnectionStepDefinition.java:19)
+	at ✽.Then the CMDB file is extracted and NULL check begins(Backend.feature:54)
+]]></failure>
+</testcase>
+<testcase classname="Backend Tests" name="Establish connection to HIVE" time="2.85521">
+<system-out><![CDATA[Given I am connected to Hive: "dgsddevhdp03.mcs.local:10000/nomura".........passed
+And I use the Hive userid: "pentaho"........................................passed
+And I use the Hive password: "yetReN6tegaw".................................passed
+And I use Hive query: "select * from block_app_flattened limit 1"...........passed
+Then the Hive connection is established.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Backend Tests" name="Extract data from HIVE" time="21.475723">
+<system-out><![CDATA[Given the Hive connection is established....................................passed
+When I insert HIVE query: "select * from  nomura.file_spool_flattened_rupesh where datetime in(select distinct datetime from nomura.file_spool_flattened_rupesh FOO where FOO.datetime>DATE_SUB(FROM_UNIXTIME(UNIX_TIMESTAMP()),30))".passed
+Then the HIVE table data is extracted at: "C://Users//Sshaikh//Desktop//SDC//sdc-ui-selenium//functional-tests//data-dump/HIVE//".passed
+]]></system-out>
+</testcase>
+<testcase classname="Backend Tests" name="NULL CHECK data from HIVE" time="30.985497">
+<failure message="java.io.IOException: Stream closed&#13;&#10;&#9;at java.io.BufferedReader.ensureOpen(BufferedReader.java:122)&#13;&#10;&#9;at java.io.BufferedReader.readLine(BufferedReader.java:317)&#13;&#10;&#9;at java.io.BufferedReader.readLine(BufferedReader.java:389)&#13;&#10;&#9;at com.sdc.automation.utilities.FileUtils.hasNullData(FileUtils.java:35)&#13;&#10;&#9;at com.sdc.automation.backend.HiveConnection.HiveDataCheckNull(HiveConnection.java:56)&#13;&#10;&#9;at com.sdc.automation.stepdefinitions.HiveConnectionStepDefinition.HiveDataCheckNull(HiveConnectionStepDefinition.java:19)&#13;&#10;&#9;at ✽.Then the file is extracted and NULL check begins(Backend.feature:75)&#13;&#10;"><![CDATA[Given the Hive connection is established....................................passed
+When I insert HIVE query: "select * from  nomura.file_spool_flattened_rupesh where datetime in(select distinct datetime from nomura.file_spool_flattened_rupesh FOO where FOO.datetime>DATE_SUB(FROM_UNIXTIME(UNIX_TIMESTAMP()),30))".passed
+And the HIVE table data is extracted at: "C://Users//Sshaikh//Desktop//SDC//sdc-ui-selenium//functional-tests//data-dump/HIVE//".passed
+Then the file is extracted and NULL check begins............................failed
+
+StackTrace:
+java.io.IOException: Stream closed
+	at java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+	at java.io.BufferedReader.readLine(BufferedReader.java:317)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at com.sdc.automation.utilities.FileUtils.hasNullData(FileUtils.java:35)
+	at com.sdc.automation.backend.HiveConnection.HiveDataCheckNull(HiveConnection.java:56)
+	at com.sdc.automation.stepdefinitions.HiveConnectionStepDefinition.HiveDataCheckNull(HiveConnectionStepDefinition.java:19)
+	at ✽.Then the file is extracted and NULL check begins(Backend.feature:75)
+]]></failure>
+</testcase>
+<testcase classname="Backend Tests" name="Capacity variation above a threshold in  HIVE" time="139.812638">
+<failure message="java.lang.Exception: Variation is -276 greater than threshold for BLOCK AND INBANHVM001 DATE -276.4777085574373&#13;&#10;&#9;at com.sdc.automation.backend.HiveConnection.HiveVariationForLastTwoDays(HiveConnection.java:131)&#13;&#10;&#9;at com.sdc.automation.stepdefinitions.HiveConnectionStepDefinition.theHiveDataExtracted(HiveConnectionStepDefinition.java:74)&#13;&#10;&#9;at ✽.Then The variation in last two days is less than percent :100(Backend.feature:83)&#13;&#10;"><![CDATA[Given the Hive connection is established....................................passed
+When I insert HIVE query: "select distinct service_type,device_devicename,from_unixtime(unix_timestamp(datetime),'yyyy-MM-dd'),used from  nomura.block_device_flattened where datetime in(select distinct datetime from nomura.block_device_flattened FOO where FOO.datetime>DATE_SUB(FROM_UNIXTIME(UNIX_TIMESTAMP()),20))".passed
+Then connection to Maria Database is established:"jdbc:mariadb://10.79.236.111:3306/sdc_qa?user=root&password=superset".passed
+And The Hive Data is dumped in MariaDbTable:"sdc_qa.hive_capacity_status"...passed
+Then The variation in last two days is less than percent :100...............failed
+
+StackTrace:
+java.lang.Exception: Variation is -276 greater than threshold for BLOCK AND INBANHVM001 DATE -276.4777085574373
+	at com.sdc.automation.backend.HiveConnection.HiveVariationForLastTwoDays(HiveConnection.java:131)
+	at com.sdc.automation.stepdefinitions.HiveConnectionStepDefinition.theHiveDataExtracted(HiveConnectionStepDefinition.java:74)
+	at ✽.Then The variation in last two days is less than percent :100(Backend.feature:83)
+]]></failure>
+</testcase>
+<testcase classname="Backend Tests" name="Number of devices variation above a threshold in  HIVE" time="136.87797">
+<failure message="java.lang.Exception: Variation is -276 greater than threshold for BLOCK AND INBANHVM001 DATE -276.4777085574373&#13;&#10;&#9;at com.sdc.automation.backend.HiveConnection.HiveNumberVariation(HiveConnection.java:119)&#13;&#10;&#9;at com.sdc.automation.stepdefinitions.HiveConnectionStepDefinition.theHiveDeviceNumbers(HiveConnectionStepDefinition.java:88)&#13;&#10;&#9;at ✽.Then The variation in last two days is less than number :100(Backend.feature:91)&#13;&#10;"><![CDATA[Given the Hive connection is established....................................passed
+When I insert HIVE query: "select distinct service_type,device_devicename,from_unixtime(unix_timestamp(datetime),'yyyy-MM-dd'),used from  nomura.block_device_flattened where datetime in(select distinct datetime from nomura.block_device_flattened FOO where FOO.datetime>DATE_SUB(FROM_UNIXTIME(UNIX_TIMESTAMP()),20))".passed
+Then connection to Maria Database is established:"jdbc:mariadb://10.79.236.111:3306/sdc_qa?user=root&password=superset".passed
+And The Hive Data is dumped in MariaDbTable:"sdc_qa.hive_capacity_status"...passed
+Then The variation in last two days is less than number :100................failed
+
+StackTrace:
+java.lang.Exception: Variation is -276 greater than threshold for BLOCK AND INBANHVM001 DATE -276.4777085574373
+	at com.sdc.automation.backend.HiveConnection.HiveNumberVariation(HiveConnection.java:119)
+	at com.sdc.automation.stepdefinitions.HiveConnectionStepDefinition.theHiveDeviceNumbers(HiveConnectionStepDefinition.java:88)
+	at ✽.Then The variation in last two days is less than number :100(Backend.feature:91)
+]]></failure>
+</testcase>
+<testcase classname="Backend Tests" name="Establish connection to HDCA" time="4.880583">
+<system-out><![CDATA[Given I am connected to HDCA: "https://dnomprddca01.mcs.local:8443/dbapi.do?action=query&dataset=defaultDs&processSync=true".passed
+And I use the HDCA Authorisation: "Basic YWRtaW46Tm9tdXJhQGhkY2Ex"..........passed
+And I use the HDCA Resource: "raidStorage"..................................passed
+And I use the HDCA Query: "[=name rx .*][=serialNumber rx .*][=openReservedCapacityGB rx .*][=unAllocatedCapacityInGB rx .*][=allocatedCapacityInGB rx .*]/raidPool[=name rx .*][=totalCapacityInGB rx .*][=usedCapacityInGB rx .*][=poolType rx .*][=subscribedCapacity rx .*]".passed
+And I use the HDCA START_TIME: "20180706_000000"............................passed
+And I use the HDCA END_TIME: "20180706_000000"..............................passed
+And the HDCA connection is established......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Backend Tests" name="Extract data from HDCA" time="4.183208">
+<system-out><![CDATA[Given the HDCA connection is established....................................passed
+When I use the HDCA Resource: "raidStorage".................................passed
+And I use the HDCA Query: "[=name rx .*][=serialNumber rx .*][=openReservedCapacityGB rx .*][=unAllocatedCapacityInGB rx .*][=allocatedCapacityInGB rx .*]/raidPool[=name rx .*][=totalCapacityInGB rx .*][=usedCapacityInGB rx .*][=poolType rx .*][=subscribedCapacity rx .*]".passed
+And I use the HDCA START_TIME: "20180706_000000"............................passed
+And I use the HDCA END_TIME: "20180706_000000"..............................passed
+Then the HDCA data is extracted at: "C://Users//Sshaikh//Desktop//SDC//sdc-ui-selenium//functional-tests//data-dump/HDCA//".passed
+]]></system-out>
+</testcase>
+<testcase classname="Backend Tests" name="Extract data from HDCA" time="4.140307">
+<system-out><![CDATA[Given the HDCA connection is established....................................passed
+When I use the HDCA Resource: "raidStorage".................................passed
+And I use the HDCA Query: "[=name rx .*][=serialNumber rx .*][=openReservedCapacityGB rx .*][=unAllocatedCapacityInGB rx .*][=allocatedCapacityInGB rx .*]/raidPool[=name rx .*][=totalCapacityInGB rx .*][=usedCapacityInGB rx .*][=poolType rx .*][=subscribedCapacity rx .*]".passed
+And I use the HDCA START_TIME: "20180706_000000"............................passed
+And I use the HDCA END_TIME: "20180706_000000"..............................passed
+And the HDCA data is extracted at: "C://Users//Sshaikh//Desktop//SDC//sdc-ui-selenium//functional-tests//data-dump/HDCA//".passed
+Then the HDCA  NULL check begins............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

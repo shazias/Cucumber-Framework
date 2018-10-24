@@ -1,0 +1,9 @@
+{"intervals":["2018-04-30/2018-05-01"],
+"granularity":"all",
+"context":{"timeout":60000,"queryId":"3823e72a-13bb-4185-9af3-1501e35a8de1"},
+"queryType":"select",
+"pagingSpec":{"threshold":2000},
+"dataSource":"iag_block_pool_flattened",
+"descending":false,
+"dimensions":["city_latitude","city_longitude","city_name","country_latitude","country_longitude","country_name","datacenter_name","device_serial","pool_name","service_type","tier_name"],
+"metrics":["capacity","count","mgmt_cost","subscribed","used","used_cost"]}

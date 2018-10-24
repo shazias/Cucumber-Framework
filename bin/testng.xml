@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Selenium Grid Test Suite" parallel="tests" thread-count="1">
+    <parameter name="remoteUrl" value="http://10.79.236.111:4444/wd/hub"/>
+
+    <test name="Selenium Grid Linux Chrome">
+        <parameter name="platform" value="linux"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.sdc.automation.runner.TestNG"/>
+            <class name="com.sdc.automation.runner.TestRunner"/>
+        </classes>
+    </test>
+
+</suite>

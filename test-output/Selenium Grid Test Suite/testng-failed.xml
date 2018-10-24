@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Selenium Grid Test Suite]" parallel="tests">
+  <parameter name="remoteUrl" value="http://10.79.236.111:4444/wd/hub"/>
+  <test name="Selenium Grid Linux Chrome(failed)" parallel="tests">
+    <classes>
+      <class name="com.sdc.automation.runner.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.sdc.automation.runner.TestRunner -->
+      <class name="com.sdc.automation.runner.TestNG">
+        <methods>
+          <include name="configureSuite"/>
+        </methods>
+      </class> <!-- com.sdc.automation.runner.TestNG -->
+    </classes>
+  </test> <!-- Selenium Grid Linux Chrome(failed) -->
+</suite> <!-- Failed suite [Selenium Grid Test Suite] -->

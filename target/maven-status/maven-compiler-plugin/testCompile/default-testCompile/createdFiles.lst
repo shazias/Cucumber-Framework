@@ -1,0 +1,8 @@
+com\sdc\automation\stepdefinitions\CMDBConnectionStepDefinition.class
+com\sdc\automation\stepdefinitions\HiveConnectionStepDefinition.class
+com\sdc\automation\stepdefinitions\DruidStepDefinition.class
+com\sdc\automation\stepdefinitions\LoginStepDef.class
+com\sdc\automation\runner\TestNG.class
+com\sdc\automation\stepdefinitions\BaseSteps.class
+com\sdc\automation\stepdefinitions\HDCAstepDefinition.class
+com\sdc\automation\runner\TestRunner.class
